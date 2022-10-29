@@ -185,8 +185,8 @@ class HBNBCommand(cmd.Cmd):
             print("** attribute name missing **")
         elif error_num == 6:
             print("** value missing **")
+            
+            
 if __name__ == "__main__":
-    
-    
     signal(SIGINT, HBNBCommand.handler)
     HBNBCommand().cmdloop()
