@@ -157,7 +157,7 @@ class HBNBCommand(cmd.Cmd):
                     else:
                         attr = args[2]
                         value = args[3]
-                        setattr(models.storage.all()[identifier],attr, value)
+                        setattr(models.storage.all()[identifier], attr, value)
                         models.storage.all()[identifier].save()
                 else:
                     self.err_handler(4)
@@ -178,8 +178,8 @@ class HBNBCommand(cmd.Cmd):
             print("** attribute name missing **")
         elif error_num == 6:
             print("** value missing **")
-            
-            
+
+
 if __name__ == "__main__":
     signal(SIGINT, HBNBCommand.handler)
     HBNBCommand().cmdloop()
