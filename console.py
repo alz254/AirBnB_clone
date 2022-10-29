@@ -62,8 +62,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, args):
         """
-         Prints the string representation of an instance based on the class name
-        and id
+         Prints the string representation of the class name and id
         """
         if len(args) == 0:
             self.err_handler(1)
